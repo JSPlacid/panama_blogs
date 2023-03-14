@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: rgb(4, 66, 110);
+    --light-color: #7b4a4a;
+}
+
+
+/* universal selector  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* min-height: 100%; */
+    /* min-height: 100%; */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+    /* background-color: var(--light-color); */
+    min-height: 100vh;  
+}
+
+
+.header {
+    color: #fff;
+    height: 80px;
+    padding: 20px;
+    /* border: #333 1px solid; */
+    justify-content: center;
+    align-self: center;
+    background-color: var(--light-color);
+}
+
+.logo {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: black;
+}
+
+/*  */
+
+/* Navbar styling */
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333 ;
+}
+
+
+.navbar h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+
+.navbar {
+    /* background-color: #040404; */
+    color: #fff;
+    height: 70px ;
+    animation: slideInFromBottom 4s ease-in;
+}
+
+.navbar ul {
+    display: flex;
+} 
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar .flex {
+    justify-content: space-around;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.container {
+    /* max-width: 110px; */
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+/* showcase */
+.showcase {
+    height: 600px;
+    /* background-color: mediumpurple; */
+    color: black;
+    /* so if we want to position something absolute on it, we can */
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.showcase .left {
+    animation: slideInFromLeft 5s ease-in;
+}
+
+.showcase .right {
+    animation: slideInFromRight 3s ease-in;
+}
+
+.showcase .middle {
+    text-align: center;
+    padding: 40px;
+    border: 2px black solid;
+    background-color: #333;
+    /* border-radius: 50%; */
+    height: 300px;
+    background-color: var(--light-color);;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* you will notice that the grid items are not centralized cos it doesn't have  HEIGHT, it's only the parent container GRID that has a height, so set height to 100% */
+    height: 100%;
+}
+
+
+.showcase .grid {
+    /* overflow: visible; */
+    /* so the first one will be 55% while the form will be 45% */
+    /* grid-template-columns: 33% 33% 33%; */
+    /* gap: 30px; */
+    align-items: center;
+
+}
+
+/* 
+
+
+/* footer */
+.footer {
+    text-align: center;
+    height: 100px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 20px;
+    background-color: #333;
+    background-color: #7b4a4a;
+    color: #fff;
+    color: black;
+
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        /* this will come from the left */
+        transform: translateX(-100%);
+    }
+
+    100% {
+        /* we want it to retain its original position */
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        /* this will come from the left */
+        transform: translateX(100%);
+    }
+
+    100% {
+        /* we want it to retain its original position */
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* .navbar a1 {
+    color: #fff;
+    padding: 20px;
+}
+
+.navbar1 a:hover {
+    border-bottom: 2px solid #fff;
+} */
+
+
+
+
+
