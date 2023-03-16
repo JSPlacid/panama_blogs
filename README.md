@@ -1,0 +1,1 @@
+this repository showcase amazing blogs and how to commence one to whomever may be interested to start their own blog
