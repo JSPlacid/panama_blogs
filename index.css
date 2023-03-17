@@ -1,45 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color: rgb(4, 66, 110);
-    --light-color: #7b4a4a;
+    --primary-color: #F1F2EE;
+    --dark-color: #41d8ec;
+    --font-color: #435058;
+    --light-color: #CEE5F2;  
 }
 
+h2,h3,p {
+    color: var(--font-color);
+}
 
 /* universal selector  */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* min-height: 100%; */
-    /* min-height: 100%; */
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #333;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     background-color: var(--primary-color);
-    /* background-color: var(--light-color); */
-    min-height: 100vh;  
+    background-image: url(./img/annie-spratt-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: var(--light-color); */ 
 }
 
 
 .header {
-    color: #fff;
-    height: 80px;
+    height: 60px;
     padding: 20px;
-    /* border: #333 1px solid; */
     justify-content: center;
-    align-self: center;
+    align-content: center;
     background-color: var(--light-color);
+    overflow: hidden;
 }
 
 .logo {
     font-weight: 300;
     line-height: 1.2;
     margin: 10px 0;
-    color: black;
+    color: var(--font-color);
 }
 
 /*  */
@@ -50,20 +54,19 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: #333 ;
+    text-decoration: none;
 }
 
 
-.navbar h1 {
-    font-weight: 300;
+/* .navbar h1 {
+    font-weight: 400;
     line-height: 1.2;
     margin: 10px 0;
-}
+} */
 
 
 .navbar {
-    /* background-color: #040404; */
     color: #fff;
     height: 70px ;
     animation: slideInFromBottom 4s ease-in;
@@ -74,11 +77,11 @@ a {
 } 
 
 .navbar a {
-    color: #fff;
     padding: 10px;
     margin: 0 5px;
-    color: black;
-    font-weight: 500;
+    display: inline-block;
+    color: var(--font-color);
+    font-weight: 700;
     font-size: 18px;
 }
 
@@ -87,13 +90,14 @@ a {
 }
 
 .navbar a:hover {
-    border-bottom: 2px solid #fff;
+    /* padding-left: 5px; */
+    border-bottom: 2px solid var(--font-color);
 }
 
 .container {
     /* max-width: 110px; */
     margin: 0 auto;
-    overflow: auto;
+    /* overflow: auto; */
     padding: 0 40px;
 }
 
@@ -108,13 +112,11 @@ a {
 
 /* showcase */
 .showcase {
-    height: 600px;
-    /* background-color: mediumpurple; */
-    color: black;
+    height: 100vh;
     /* so if we want to position something absolute on it, we can */
     position: relative;
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px 25px;
+    font-size: 24px;
     padding-top: 100px;
 }
 
@@ -127,13 +129,16 @@ a {
 }
 
 .showcase .middle {
+    color: var(--primary-color);
+    padding-top: 80px;
+    height: 260px;
+    width: 260px;
     text-align: center;
-    padding: 40px;
-    border: 2px black solid;
-    background-color: #333;
-    /* border-radius: 50%; */
-    height: 300px;
-    background-color: var(--light-color);;
+    border-radius: 130px;
+    background-color: var(--dark-color);
+    /* background-color: #f09d51; */
+    background-color: var(--dark-color);
+    /* align-content: center; */
 }
 
 
@@ -141,6 +146,8 @@ a {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+   /* grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); */
+
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -165,16 +172,17 @@ a {
 .footer {
     text-align: center;
     height: 100px;
+    background-color: var(--light-color);
+    animation: slideInFromBottom 4s ease-in;
+
 }
 
 p {
     font-size: 16px;
     font-weight: 400;
     padding-top: 20px;
-    background-color: #333;
-    background-color: #7b4a4a;
-    color: #fff;
-    color: black;
+    background-color: var()
+   
 
 }
 
