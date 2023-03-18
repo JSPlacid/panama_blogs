@@ -11,6 +11,7 @@ html{
 }
 h2,h3,p {
     color: var(--font-color);
+    /* color: pink; */
 }
 
 /* universal selector  */
@@ -145,7 +146,6 @@ a {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   /* grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); */
 
     gap: 10px;
     justify-content: center;
@@ -213,7 +213,7 @@ p {
         transform: translateY(0);
     }
 }
-
+/*************************************************contact page styles *****************************/
 .othernav{
     display: flex;
     justify-content: space-between;
@@ -242,18 +242,29 @@ p {
 
 }
 
+div[class^=contact] p,a,h4{
+    color: var(--font-color);
+    /* margin: 0; */
+}
+
+div[class^=contact] p,a{
+    padding: 1px 2px;
+    /* color: red; */
+    margin: 1px;
+}
+
 input[type='text'],input[type='email']{
     border: none;
     border-bottom: var(--font-color) 1px dashed;
     outline: none;
     padding: 8px;
     display: inline-block;
-    width: 60%;
+    width: 90%;
     margin: .3em;
 
 }
 textarea{
-    width: 60%;
+    width: 90%;
     outline: 0;
     display: block;
     border: var(--light-color) 1px solid;
@@ -264,11 +275,46 @@ textarea{
 }
 
 .notify{
-    width: 60%;
+    width: 90%;
+    padding: .2em .5em;
     display: flex;
     justify-content: space-between;
 }
+.foll{
+    display: flex;
+    padding: .2em;
+}
 
+.foll li{
+    padding: .2em .4em;
+}
 
+.rights{
+    padding: .2em .4em;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 2em;
+}
 
+.box-1{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+    padding-block: .2em;
+    color: var(--font-color);
 
+}
+.offers>h4 {
+    color: var(--font-color);
+    padding-block: .2em;
+}
+.offers{
+    color: var(--font-color);
+    line-height: 1.2;
+}
+
+.contact-grid{
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: .4em;
+}
