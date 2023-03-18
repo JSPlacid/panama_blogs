@@ -69,6 +69,7 @@ a {
 
 
 .navbar {
+    padding-top: 20px;
     color: #fff;
     height: 70px ;
     animation: slideInFromBottom 4s ease-in;
@@ -84,7 +85,7 @@ a {
     display: inline-block;
     color: var(--font-color);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .navbar .flex {
@@ -116,7 +117,8 @@ a {
     position: relative;
     padding: 10px 25px;
     font-size: 24px;
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 180px;
 }
 
 .showcase .left {
@@ -173,7 +175,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     padding: 15px;
 }
